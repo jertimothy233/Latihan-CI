@@ -1,0 +1,13 @@
+# MLflow artifacts (TIDAK DI-PUSH ke GitHub)
+mlruns/
+
+# Model files besar
+*.pkl
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Environment
+.env
+.venv/
