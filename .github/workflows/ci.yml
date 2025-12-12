@@ -9,6 +9,7 @@ on:
 jobs:
   run-mlflow:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -23,6 +24,6 @@ jobs:
           python -m pip install --upgrade pip
           pip install mlflow scikit-learn pandas
 
-      - name: Run MLflow project
+      - name: Run MLflow Project
         run: |
-          mlflow run ./MLproject -P n_estimators=300 -P max_depth=15
+          mlflow run ./MLproject
